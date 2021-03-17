@@ -10,54 +10,50 @@ returns a value, that value will be logged to the console.  An example of this w
 
 /*
 Task 1a - Voting Age
-
 Do the following:   
    1. Create a variable called votingAge and assign it a value
    2. Console log true if age is 18 or higher
-
    HINT: no function required
 */
-// let votingAge = 18;
+let votingAge = 18;
 
-// if(votingAge >= 18){
-//   console.log('true');
-// }
+if(votingAge >= 18){
+  console.log('true');
+}
 
 
 /*
 Task 1b - Values
-
 Do the following:   
    1. Declare two variables and assign them values
    2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
    3. Console log the new value of the 1st variable
-
    HINT: no function required
 */
 
-// let var1 = 2;
-// let var2 = 4;
+let var1 = 2;
+let var2 = 4;
 
-// if(var2 > 3){
-//   var1 = 5;
-// }
-// console.log(var1);
+if(var2 > 3){
+  var1 = 5;
+}
+console.log(var1);
+
 
 
 /*
 Task 1c - Convert Strings to Numbers
-
 Do the following:   
    1. Declare a string type variable with the value of "1999"
    2. Convert the string value of "1999" to a integer value of 1999
    3. Console log the result
-
    HINT: look up the Number method
 */
 
-// let  var3= '1999';
-// Number(var3)
-// console.log(var3)
+let  var3= '1999';
+Number(var3)
+console.log(var3)
+
 
 
 /*
@@ -69,11 +65,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(a, b) {
+  function multiply(a, b) {
     return a * b;
   }
   console.log(multiply(4, 4));
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -87,9 +82,10 @@ Do the following:
 */
 
 function dogYears(x){
-    return x * 7
+  return x * 7
 }
 console.log(dogYears(5));
+
 
 
 
@@ -105,13 +101,11 @@ Use the hungryDog function and feeding requirements below to do the following:
   REMEMBER: This program should handle correctly adult AND puppy ages and weights
   
   Feeding Requirements:
-
   Adult Dogs 1 year and older 
      up to 5 lbs - 5% of their body weight
      6 - 10 lbs - 4% of their body weight 
      11 - 15 lbs - 3% of their body weight 
      > 15lbs - 2% of their body weight 
-
   Puppies less than 1 year
      2 - 4 months 10% of their body weight
      4 - 7 months 5% of their body weight 
@@ -121,25 +115,27 @@ Use the hungryDog function and feeding requirements below to do the following:
 */  
 
 function hungryDog(weight, age){
-    if(age < 0.2) {
-      return 'The puppy is too young';
-    }else if (age >= 0.2 && age < 0.4) {
-      return weight * 0.1;
-    }else if (age >= 0.4 && age < 0.7) {
-      return weight * 0.5;
-    }else if (age >= 0.7 && age < 1) {
-      return weight * 0.4;
-    }else {
-      if (weight <= 5) {
-        return weight * 0.05;
-      }else if (weight >= 6 && weight <= 10) {
-        return weight * 0.04;
-      }else if (weight >= 11 && weight <= 15) {
-        return weight * 0.03;
-      }else if (weight > 15) {
-        return weight * 0.02;
-      }
+  if(age < 0.2) {
+    return 'The puppy is too young';
+  }else if (age >= 0.2 && age < 0.4) {
+    return weight * 0.1;
+  }else if (age >= 0.4 && age < 0.7) {
+    return weight * 0.5;
+  }else if (age >= 0.7 && age < 1) {
+    return weight * 0.4;
+  }else {
+    if (weight <= 5) {
+      return weight * 0.05;
+    }else if (weight >= 6 && weight <= 10) {
+      return weight * 0.04;
+    }else if (weight >= 11 && weight <= 15) {
+      return weight * 0.03;
+    }else if (weight > 15) {
+      return weight * 0.02;
     }
+  }
+}
+
 
 
 
@@ -149,9 +145,7 @@ function hungryDog(weight, age){
 /*
 Create a global variable that randomly generates the computer's choice
 Use Math.random to determine the computers choice (Math.random gives a random number between 0 and 1)
-
 HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
-
 Use the game function below to do the following:
   1. Receive 2 parameters the user's choice and the computer's choice
   2. Return whether the user won, lost, or tied based on these rules of the game described below - the strings returned need to match the strings below exactly.
@@ -214,10 +208,9 @@ Using the feet function below do the following:
 */
 
 function feet(c){
-    return c / 30.48
-  }
-  console.log(feet(10));
- 
+  return c / 30.48
+}
+console.log(feet(10));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -231,11 +224,10 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(startingNumber){
-        for (let i=startingNumber; i >= 0; i--){
-        return `${i} bottles of soda on the wall, ${i} bottles of soda, take on down pass it around ${i-1} bottles of soda on the wall`
-  }
+  for (let i=startingNumber; i >= 0; i--){
+  return `${i} bottles of soda on the wall, ${i} bottles of soda, take on down pass it around ${i-1} bottles of soda on the wall`
 }
-
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -244,7 +236,6 @@ function annoyingSong(startingNumber){
 Using the grade function below do the following: 
   1. Receive a score out of 100 
   2. Return the corresponding letter grade following this grade scale:
-
    90-100 should return 'you got an A' 
    80-89 should return 'you got a B'
    70-79 should return 'you got a C'
@@ -252,7 +243,7 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(g){
+function grade(){
   
   }
   
@@ -265,15 +256,14 @@ function grade(g){
 Using the vowelCounter function below do the following:
   1. Receive a string as a parameter
   2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
-
   HINT - you may need to study tomorrow's content on arrays 
   HINT - try looking up the .includes() method
 */
 
 
-// function vowelCounter(v) {
-   
-// }
+function vowelCounter(/*add your code here*/) {
+    /*add your code here*/
+}
 
 
 
